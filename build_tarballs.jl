@@ -1,6 +1,6 @@
 using BinaryBuilder
 
-# Collection of sources required to build libffi
+# Collection of sources required to build Pcre
 sources = [
     "http://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz" =>
     "244838e1f1d14f7e2fa7681b857b3a8566b74215f28133f14a8f5e59241b682c",

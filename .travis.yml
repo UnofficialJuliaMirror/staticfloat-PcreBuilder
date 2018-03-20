@@ -28,12 +28,12 @@ script:
 deploy:
   provider: releases
   api_key:
-    # Note; this api_key is only valid for staticfloat/libffiBuilder; you need
+    # Note; this api_key is only valid for staticfloat/PcreBuilder; you need
     # to make your own: https://docs.travis-ci.com/user/deployment/releases/
-    secure: UzIs8muOPul/StbC2oDi+ZNP2nK/Bu4Yykd4yFGxTAQ9GnKsvkU0NesLr2kbL3THf6MSxQ930ZxzhN3/Nse/yu/aBstMugJUI4ikDTPbkwr1BRXOfYfR/h5h79gsSqs6Liy208Ex6emhNHNSaiLZTH7mw9URvyvv06x/3hP27o5sfzEW8adu7y6FnQb3J9wOHENlhgkMoDLAYfpQiMWssVxDEScEtQoX+lgjULm7tOmzaEyYhRcsH3kvWlL4FJyPVChlEfp2vBzQwWGj0ijbhvBC8hPc4RnSCB/zZVc5zLBXomclRtoCExDmguVIEs5yWE1mKNJsQEO4SvJYEy3G83PWV7N9pZak8Aq3uPnAvKBikvxNTksvp0JfwqB2n796D7UkJPXYkE+S7tfHJXo34BOBiOWr6MG59KkdGhGlkQyx3w12Bq/VZgh9UpQFH5Gj/3HQZ92KaPz30KQdgJzX7x03Xh3+vhgRa4HxF51qGH7XbTCzG0gwAFI9ascg/S6vkzyPnzcNgnVi09MVe2B9n4HN0BWPhnIPqlOGuzVx9wm+gRGFvQKwkASa8KKltXQfIDV/itLmsPGDGfNnPWOeqGqajJ9EOFYOlvEq1X82xexStr1/mqbnY77ZmOs2ZEW3VzUblFvfU6eux0PetaKu9O+DI/zoFJ60s+6d0KWasPM=
+    secure: 
   file_glob: true
   file: products/*
   skip_cleanup: true
   on:
-    repo: staticfloat/libffiBuilder
+    repo: staticfloat/PcreBuilder
     tags: true
