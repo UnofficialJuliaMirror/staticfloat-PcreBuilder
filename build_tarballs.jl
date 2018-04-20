@@ -2,14 +2,14 @@ using BinaryBuilder
 
 # Collection of sources required to build Pcre
 sources = [
-    "http://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz" =>
-    "244838e1f1d14f7e2fa7681b857b3a8566b74215f28133f14a8f5e59241b682c",
+    "https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.bz2" =>
+    "2cd04b7c887808be030254e8d77de11d3fe9d4505c39d4b15d2664ffe8bf9301",
 ]
 
 # Bash recipe for building across all platforms
 script = raw"""
 cd $WORKSPACE/srcdir
-cd pcre-8.41/
+cd pcre-8.42/
 ./configure --prefix=$prefix --host=$target
 make -j${nproc}
 make install
